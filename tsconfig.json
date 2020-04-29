@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+      "outDir": "lib",
+      "module": "commonjs",
+      "target": "es5",
+      "lib": ["DOM", "esnext"],
+      "sourceMap": true,
+      "allowJs": true,
+      "jsx": "react",
+      "moduleResolution": "node",
+      "forceConsistentCasingInFileNames": true,
+      "noImplicitReturns": true,
+      "strict": true,
+      "strictFunctionTypes": true,
+      "suppressImplicitAnyIndexErrors": true,
+      "noUnusedLocals": true,
+      "pretty": true,
+      "allowSyntheticDefaultImports": true,
+      "esModuleInterop": true,
+      "downlevelIteration": true,
+      "noImplicitAny": false
+    },
+    "exclude": ["./node_modules", "./lib"],
+    "include": ["src/**/*"]
+}

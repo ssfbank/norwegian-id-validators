@@ -1,0 +1,47 @@
+{
+  "name": "@ssfbank/norwegian-id-validators",
+  "version": "1.0.0",
+  "description": "Validates norwegian ssn, orgno(both statically and API), accountno and KID. Based on npm pkg norsk-validator.",
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "type-check:watch": "npm run type-check -- --watch",
+    "build": "npm run build:types && npm run build:js",
+    "build:types": "tsc --emitDeclarationOnly",
+    "build:js": "babel src --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
+    "test": "jest"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ssfbank/norwegian-id-validators.git"
+  },
+  "keywords": [
+    "fodselsnummer",
+    "organisasjonsnummer",
+    "ssn",
+    "norsk",
+    "norwway"
+  ],
+  "author": "Asbjørn Lucassen, Sparebanken Sogn og Fjordane",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ssfbank/norwegian-id-validators/issues"
+  },
+  "jest": {
+    "preset": "ts-jest"
+  },
+  "homepage": "https://github.com/ssfbank/norwegian-id-validators#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.8.3",
+    "@babel/core": "^7.8.3",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "@babel/preset-typescript": "^7.8.3",
+    "typescript": "^3.7.5",
+    "jest": "^25.5.0",
+    "ts-jest": "^25.4.0",
+    "@types/jest": "^25.2.1"
+  }
+}
