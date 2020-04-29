@@ -1,6 +1,4 @@
-import { kontrollsiffferMod11 } from '../tools';
-
-const PERIOD_COMMA_SPACE_REGEX = /[,.\s]/g;
+import { kontrollsiffferMod11, PERIOD_COMMA_SPACE_REGEX } from '../tools';
 
 export const validateAccount = (kontonummer) => {
   if (!kontonummer) {

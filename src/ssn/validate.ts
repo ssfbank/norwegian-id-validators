@@ -1,4 +1,5 @@
-import { PERIOD_COMMA_SPACE_REGEX, MOD11, vekttallSum, vekttallKontrollsiffer1, vekttallKontrollsiffer2 } from './tools';
+import { weightedSum, vekttallKontrollsiffer1, vekttallKontrollsiffer2 } from './summing';
+import { PERIOD_COMMA_SPACE_REGEX, MOD11 } from '../tools';
 
 export const validateSsn = (ssn: string): boolean => {
   const fodselsnummerString = ssn.toString()
@@ -8,12 +9,12 @@ export const validateSsn = (ssn: string): boolean => {
     return false;
   }
 
-  let kontrollsiffer1 = MOD11 - (vekttallSum(fodselsnummerString, vekttallKontrollsiffer1) % MOD11);
+  let kontrollsiffer1 = MOD11 - (weightedSum(fodselsnummerString, vekttallKontrollsiffer1) % MOD11);
   if (kontrollsiffer1 === MOD11) {
     kontrollsiffer1 = 0;
   }
 
-  let kontrollsiffer2 = MOD11 - (vekttallSum(fodselsnummerString, vekttallKontrollsiffer2) % MOD11);
+  let kontrollsiffer2 = MOD11 - (weightedSum(fodselsnummerString, vekttallKontrollsiffer2) % MOD11);
   if (kontrollsiffer2 === MOD11) {
     kontrollsiffer2 = 0;
   }

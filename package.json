@@ -10,6 +10,7 @@
     "build:js": "babel src --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
     "test": "jest"
   },
+  "main": "lib/index.js",
   "files": [
     "lib"
   ],
@@ -25,7 +26,7 @@
     "norwway"
   ],
   "author": "Asbjørn Lucassen, Sparebanken Sogn og Fjordane",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/ssfbank/norwegian-id-validators/issues"
   },

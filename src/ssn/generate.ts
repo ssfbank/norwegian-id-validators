@@ -1,5 +1,6 @@
-import { PERIOD_COMMA_SPACE_REGEX, MOD11, vekttallSum as weightedSum, vekttallKontrollsiffer1, vekttallKontrollsiffer2 } from './tools';
+import { weightedSum, vekttallKontrollsiffer1, vekttallKontrollsiffer2 } from './summing';
 import { validateSsn } from './validate';
+import { PERIOD_COMMA_SPACE_REGEX, MOD11 } from '../tools';
 
 /**
  * Uses 6 digits(DDMMYY) to generate a valid SSN. Will give a random one each time

@@ -1,5 +1,9 @@
-const MOD11 = 11;
-const MOD10 = 10;
+export const MOD11 = 11;
+export const MOD10 = 10;
+
+export const SPACE_REGEX = /[\s]/g;
+export const PERIOD_COMMA_SPACE_REGEX = /[,.\s]/g;
+
 
 export const kontrollsiffferMod11 = (tall) => {
   let kontrollsiffer = 2;

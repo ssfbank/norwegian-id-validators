@@ -4,6 +4,10 @@ test('998447356 is a valid ssn', () => {
     expect(validateOrg('998447356')).toBe(true);
 });
 
+test('998 447 356 is a valid ssn', () => {
+    expect(validateOrg('998 447 356')).toBe(true);
+});
+
 test('998447357 is an invalid ssn', () => {
     expect(validateOrg('998447357')).toBe(false);
 });

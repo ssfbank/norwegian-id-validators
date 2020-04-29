@@ -1,6 +1,4 @@
-import { kontrollsiffferMod10, kontrollsiffferMod11 } from '../tools';
-
-const SPACE_REGEX = /[\s]/g;
+import { kontrollsiffferMod10, kontrollsiffferMod11, SPACE_REGEX } from '../tools';
 
 export const validateKid = (kidnummer, mod11 = true, mod10 = true) => {
   if (!kidnummer || kidnummer.length === 0) {
@@ -17,4 +15,3 @@ export const validateKid = (kidnummer, mod11 = true, mod10 = true) => {
 
   return (mod11 && erMod11) || (mod10 && erMod10);
 };
-
